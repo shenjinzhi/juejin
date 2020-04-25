@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>左右轮播图插件</title>
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="banner-plugin.css">
+    
+    <style>
+        /* -- 自配置 -- */
+        .xiaozhima-container {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 轮播图整体容器 -->
+    <div class="xiaozhima-container" id="banner">
+        <!-- 所有图片容器 -->
+        <div class="xiaozhima-wrapper">
+            <!-- 每个图片容器 -->
+            <div class="xiaozhima-slide">
+                <!-- 插入您的图片 -->
+                <img src=" " alt="">
+            </div>
+            <div class="xiaozhima-slide">
+                <img src=" " alt="">
+            </div>
+            <div class="xiaozhima-slide">
+                <img src=" " alt="">
+            </div>
+            <div class="xiaozhima-slide">
+                <img src=" " alt="">
+            </div>
+        </div>
+        <!-- 分页器容器 -->
+        <div class="xiaozhima-pagination"></div>
+        <!-- 左右按钮容器 -->
+        <a href="javascript:;" class="xiaozhima-arrow-prev"></a>
+        <a href="javascript:;" class="xiaozhima-arrow-next"></a>
+    </div>
+
+    <script src="banner-plugin.js"></script>
+    
+    <!-- 自配置 -->
+    <script>
+        bannerPlugin('#banner');
+    </script>
+</body>
+
+</html>
